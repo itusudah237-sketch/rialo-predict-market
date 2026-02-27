@@ -1,28 +1,45 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rialo Market Predictor</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Rialo Predict Market</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .logo {
+            animation: spin 3s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        input[type="text"] {
+            padding: 10px;
+            margin: 20px 0;
+            width: 300px;
+            border: 2px solid #ffffff;
+            border-radius: 5px;
+            background-color: #333333;
+            color: #ffffff;
+        }
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Rialo Market Predictor</h1>
-    
-    <div class="container">
-        <input id="hargaInput" type="number" placeholder="Masukkan harga market">
-        <button id="predictBtn">Predict</button>
-    </div>
-
-    <div id="resultContainer" class="result-container hidden">
-        <p id="resultText"></p>
-    </div>
-
-    <div id="historyContainer" class="history-container">
-        <h2>History Prediksi</h2>
-        <ul id="historyList"></ul>
-    </div>
-
-    <script src="js/script.js"></script>
+    <h1>Welcome to Rialo Predict Market</h1>
+    <img src="path/to/logo.png" alt="Rialo Logo" class="logo">
+    <h2>Market Prediction</h2>
+    <input type="text" placeholder="Enter your market prediction..."></input>
+    <br>
+    <a href="/prediction">Go to Prediction Page</a>
 </body>
 </html>
